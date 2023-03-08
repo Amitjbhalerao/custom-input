@@ -11,32 +11,29 @@
     font-size: 16px;
     line-height: 22px;
     padding-left:20px;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    padding-top: 38px;
+    padding-bottom: 16px;
     letter-spacing: 0.01em;
-    width: 100%;
+    width: 800%;
     color: #060452;
-    margin-bottom: 32px;
 }
 .form-label {
   position:absolute;
-  visibility: hidden;
-  display:block ;
-  margin-top:27px;
+  padding-top:27px;
   padding-left:20px;
   font-weight: 600;
   font-family: 'Roboto';
   font-style: normal;
+  cursor: text;
   font-size: 17px;
   line-height: 22px;
   letter-spacing: 0.01em;
   color: #8E8E94;
-  transition: all 0.1s ease-in;
+  transition: all 0.3s;
 
 }
 .textbox:focus ~ .form-label,.textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label { 
-  margin-top:16px;
-  visibility:visible;
+  padding-top:16px;
   padding-left:20px;
   font-size: 14px;
   line-height: 20px;
@@ -45,14 +42,14 @@
   font-style: normal;
   font-weight: 400;
 }
-.textbox:focus ,.textbox:not(:placeholder-shown).textbox:not(:focus){
+/* .textbox:focus ,.textbox:not(:placeholder-shown).textbox:not(:focus){
   padding-top: 38px;
   padding-bottom:16px;
-}
-input:focus::placeholder{
+} */
+/* input:focus::placeholder{
   color:transparent;
-}
-input::placeholder{
+} */
+/* input::placeholder{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
@@ -60,4 +57,4 @@ font-size: 17px;
 line-height: 22px;
 letter-spacing: 0.01em;
 color: #8E8E94;
-}
+} */
