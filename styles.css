@@ -30,8 +30,10 @@
     margin-bottom: 32px;
 }
 .form-label {
-  position: absolute;
-  padding-top:27px;
+  position:absolute;
+  /* overflow: hidden; */
+  display:block ;
+  margin-top:27px;
   padding-left:20px;
   font-weight: 600;
   font-family: 'Roboto';
@@ -40,16 +42,38 @@
   line-height: 22px;
   letter-spacing: 0.01em;
   color: #8E8E94;
-  cursor: text;
-  transition: all 0.2s ease-in;
+  /* cursor: text; */
+  transition: all 0.1s ease-in;
+
 }
 .textbox:focus ~ .form-label,.textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label{ 
-  padding-top:16px;
+  margin-top:16px;
   padding-left:20px;
   font-size: 14px;
   line-height: 20px;
   color: #060452;
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
 }
+/* .form-label::before {
+  content: attr(data-content);
+  display: inline-block;
+  filter: blur(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform-origin: left top;
+  transition: transform 0.2s ease;
+  position: relative;
+} */
+/* .hidden--visually {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+} */
+/* .form-label::before,
+.textbox:focus + .form-label::before {
+  transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1);
+} */
