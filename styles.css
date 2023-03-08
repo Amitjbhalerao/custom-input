@@ -1,9 +1,6 @@
 .main{
   color: rgb(17, 135, 238);
   font-size: 10px;
-  /* transition-property: font-size;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in; */
   transition: font-size 0.5s ease-in;
 }
 .main:hover{
@@ -22,8 +19,8 @@
     font-size: 16px;
     line-height: 22px;
     padding-left:20px;
-    padding-top: 38px;
-    padding-bottom: 16px;
+    padding-top: 27px;
+    padding-bottom: 27px;
     letter-spacing: 0.01em;
     width: 100%;
     color: #060452;
@@ -32,6 +29,7 @@
 .form-label {
   position:absolute;
   /* overflow: hidden; */
+  visibility: hidden;
   display:block ;
   margin-top:27px;
   padding-left:20px;
@@ -46,8 +44,9 @@
   transition: all 0.1s ease-in;
 
 }
-.textbox:focus ~ .form-label,.textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label{ 
+.textbox:focus ~ .form-label,.textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label { 
   margin-top:16px;
+  visibility:visible;
   padding-left:20px;
   font-size: 14px;
   line-height: 20px;
@@ -56,24 +55,10 @@
   font-style: normal;
   font-weight: 400;
 }
-/* .form-label::before {
-  content: attr(data-content);
-  display: inline-block;
-  filter: blur(0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  transform-origin: left top;
-  transition: transform 0.2s ease;
-  position: relative;
-} */
-/* .hidden--visually {
-  border: 0;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute;
-} */
-/* .form-label::before,
-.textbox:focus + .form-label::before {
-  transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1);
-} */
+.textbox:focus ,.textbox:not(:placeholder-shown).textbox:not(:focus){
+  padding-top: 38px;
+  padding-bottom:16px;
+}
+input:focus::placeholder{
+  color:transparent;
+}
