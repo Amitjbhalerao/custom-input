@@ -1,12 +1,4 @@
-.main{
-  color: rgb(17, 135, 238);
-  font-size: 10px;
-  transition: font-size 0.5s ease-in;
-}
-.main:hover{
-  color: black;
-  font-size: 20px;
-}
+
 .box{
   position: relative;
   display: grid;
@@ -28,7 +20,6 @@
 }
 .form-label {
   position:absolute;
-  /* overflow: hidden; */
   visibility: hidden;
   display:block ;
   margin-top:27px;
@@ -40,7 +31,6 @@
   line-height: 22px;
   letter-spacing: 0.01em;
   color: #8E8E94;
-  /* cursor: text; */
   transition: all 0.1s ease-in;
 
 }
